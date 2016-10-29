@@ -15,7 +15,20 @@
       width: 100%;
       height: 100%;
       display: block;
-      background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 65%, rgba(255, 255, 255, 1) 75%);
+      background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 70%, rgba(255, 255, 255, 1) 75%);
+    }
+
+    .caption {
+      position: absolute;
+      top: 80%;
+      left: 0;
+      width: 80%;
+      height: 15%;
+      display: block;
+      background: -webkit-linear-gradient(left, rgba(0, 0, 0, .75) 0%, 
+        rgba(160, 160, 160, 0) 80%);
+      text-align: left;
+      text-indent: 25px;
     }
 
     .item {
@@ -40,14 +53,14 @@
         <div class="item active">    
           <img src="static/test2.jpg" style="width: 120%;" alt="">  
           <div class="overlay"></div>
-          <div class="carousel-caption">
+          <div class="carousel-caption caption">
             Caption
           </div>
         </div>
         <div class="item">
           <img src="static/test.jpg" alt="">
           <div class="overlay"></div>
-          <div class="carousel-caption">
+          <div class="carousel-caption caption">
             Caption 2
           </div>
         </div>
