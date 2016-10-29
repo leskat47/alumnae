@@ -2,6 +2,7 @@
 <head>
   <title></title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="frodo.css">
   <style type="text/css">
     .announcements {
       position: absolute;
@@ -35,6 +36,9 @@
       position: relative;
     }
 
+    .news-thumbnail {
+      padding: 20px 0px 20px 0px;
+    }
 
   </style>
 </head>
@@ -45,11 +49,12 @@
 
     <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
-        <ol class="announcements col-sm-offset-9 col-sm-3">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
+        <aside class="announcements col-sm-offset-9 col-sm-3">
+          <h2>Announcements</h2>
+          <h4><div data-slide-to="0" class="active news-thumbnail">Featured Jobs</div></h4>
+          <h4><div data-slide-to="1" class="news-thumbnail">Event Title</div></h4>
+          <h4><div data-slide-to="2" class="news-thumbnail">Blog Post</div></h4>
+        </aside>
         <div class="item active">    
           <img src="static/test2.jpg" style="width: 120%;" alt="">  
           <div class="overlay"></div>
