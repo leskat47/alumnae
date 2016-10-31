@@ -4,6 +4,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link href="frodo.css">
   <style type="text/css">
+  
     .announcements {
       position: absolute;
       z-index: 15;
@@ -16,7 +17,7 @@
       width: 100%;
       height: 100%;
       display: block;
-      background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 70%, rgba(255, 255, 255, 1) 75%);
+      background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 50%,  rgba(255, 255, 255, 0.5) 65%, rgba(255, 255, 255, 0.75) 70%, rgba(255, 255, 255, 1) 75%);
     }
 
     .caption {
@@ -51,12 +52,27 @@
       <div class="carousel-inner" role="listbox">
         <aside class="announcements col-sm-offset-9 col-sm-3">
           <h2>Announcements</h2>
-          <h4><div data-slide-to="0" class="active news-thumbnail">Featured Jobs</div></h4>
-          <h4><div data-slide-to="1" class="news-thumbnail">Event Title</div></h4>
-          <h4><div data-slide-to="2" class="news-thumbnail">Blog Post</div></h4>
+          <h4>
+            <div data-slide-to="0" class="active news-thumbnail row">
+              <img class="col-sm-8" src="static/test2.jpg">
+              <h5 class="col-sm-4">Featured Jobs</h5>
+            </div>
+          </h4>
+          <h4>
+            <div data-slide-to="1" class="news-thumbnail row">
+              <img class="col-sm-8" src="static/test.jpg">
+              <h5 class="col-sm-4">Event Title</h5>
+            </div>
+          </h4>
+          <h4>
+            <div data-slide-to="2" class="news-thumbnail row">
+              <img class="col-sm-8" src="static/test3.jpg">
+              <h5 class="col-sm-4">Blog Post</h5>
+            </div>
+          </h4>
         </aside>
         <div class="item active">    
-          <img src="static/test2.jpg" style="width: 120%;" alt="">  
+          <img src="static/test2.jpg" style="width: 110%;" alt="">  
           <div class="overlay"></div>
           <div class="carousel-caption caption">
             Caption
@@ -64,6 +80,13 @@
         </div>
         <div class="item">
           <img src="static/test.jpg" alt="">
+          <div class="overlay"></div>
+          <div class="carousel-caption caption">
+            Caption 2
+          </div>
+        </div>
+         <div class="item">
+          <img src="static/test3.jpg" alt="">
           <div class="overlay"></div>
           <div class="carousel-caption caption">
             Caption 2
