@@ -3,7 +3,6 @@
   <title></title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="frodo.css">
-  <link rel="stylesheet" type="text/css" href="frodo.less">
   <style type="text/css">
 
     .announcements {
@@ -61,7 +60,7 @@
   </style>
 </head>
 <body>
-  <div id="carousel-example-generic" class="carousel slide container" data-ride="carousel">
+  <div id="hbCarousel" class="carousel slide container" data-ride="carousel">
 
     <div class="row">
     <!-- Wrapper for slides -->
@@ -70,19 +69,19 @@
         <aside class="announcements hidden-sm col-md-offset-9 col-md-3">
           <h2>Announcements</h2>
   
-          <div data-target="#carousel-example-generic" data-slide-to="0" class="active news-thumbnail">
+          <div data-target="#hbCarousel" data-slide-to="0" class="active news-thumbnail">
             <a href="#" class="row">
               <img class="col-sm-8 thumbnail" src="static/test2.jpg">
               <h5 class="col-sm-4">Featured Jobs</h5>
             </a>
           </div>       
-          <div data-target="#carousel-example-generic" data-slide-to="1" class="news-thumbnail">
+          <div data-target="#hbCarousel" data-slide-to="1" class="news-thumbnail">
             <a href="#" class="row">
               <img class="col-sm-8 thumbnail" src="static/test.jpg">
               <h5 class="col-sm-4">Event Title</h5>
             </a>
           </div>
-          <div data-target="#carousel-example-generic" data-slide-to="2" class="news-thumbnail row">
+          <div data-target="#hbCarousel" data-slide-to="2" class="news-thumbnail row">
             <a href="#" class="row">
               <img class="col-sm-8 thumbnail" src="static/test3.jpg">
               <h5 class="col-sm-4">Blog Post</h5>
@@ -94,21 +93,21 @@
         </aside>
 
     <!-- Indicators -->
-          <div class="item active" data-target="#carousel-example-generic" data-slide-to="0" >    
+          <div class="item active" data-target="#hbCarousel" data-slide-to="0" >    
             <img src="static/test2.jpg" alt="...">  
             <div class="overlay"></div>
             <div class="carousel-caption caption">
               Caption
             </div>
           </div>
-          <div class="item" data-target="#carousel-example-generic" data-slide-to="1" >
+          <div class="item" data-target="#hbCarousel" data-slide-to="1" >
             <img src="static/test.jpg" alt="...">
             <div class="overlay"></div>
             <div class="carousel-caption caption">
               Caption 2
             </div>
           </div>
-           <div class="item" data-target="#carousel-example-generic" data-slide-to="2" >
+           <div class="item" data-target="#hbCarousel" data-slide-to="2" >
             <img src="static/test3.jpg" alt="...">
             <div class="overlay"></div>
             <div class="carousel-caption caption">
@@ -124,5 +123,20 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+  $('.news-thumbnail').mouseover(function() {
+    var ctrl = $(this);
+    var interval=300;
+
+    myInterval = setInterval(function(){
+         ctrl.trigger("click");
+    },interval);
+  });
+
+  $('.news-thumbnail').mouseout(function(){
+      clearInterval(myInterval);
+      myInterval = false;
+  });
+</script>
 </body>
 </html>
