@@ -13,6 +13,13 @@
 
     .news-thumbnail {
       margin: 8px 0 8px 0;
+      padding: 5px 0px 5px 10px;
+    }
+
+    .news-thumbnail:hover {
+      background: #e5e5e5;
+      background: -webkit-linear-gradient(top, rgba(160, 160, 160, .75) 30%, 
+        rgba(255, 255, 255, 0) 90%);
     }
 
     .overlay {
@@ -46,14 +53,12 @@
       width: 900px;
     }
 
-    .news-thumbnail {
-      padding-bottom: 10px;
-    }
-
     .thumbnail {
       width: 125px;
       border-radius: 15%;
       padding: 0px;
+      margin: 0px;
+      border: 0px;
       box-shadow: 2px 2px 5px #aaa;
     }
 
@@ -66,25 +71,25 @@
     <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         
-        <aside class="announcements hidden-sm col-md-offset-9 col-md-3">
+        <aside class="announcements hidden-sm col-md-offset-8 col-md-4">
           <h2>Announcements</h2>
   
           <div data-target="#hbCarousel" data-slide-to="0" class="active news-thumbnail">
             <a href="#" class="row">
-              <img class="col-sm-8 thumbnail" src="static/test2.jpg">
-              <h5 class="col-sm-4">Featured Jobs</h5>
+              <img class="col-sm-4 thumbnail" src="static/test2.jpg">
+              <h4 class="col-sm-7">Featured Jobs</h4>
             </a>
           </div>       
           <div data-target="#hbCarousel" data-slide-to="1" class="news-thumbnail">
             <a href="#" class="row">
-              <img class="col-sm-8 thumbnail" src="static/test.jpg">
-              <h5 class="col-sm-4">Event Title</h5>
+              <img class="col-sm-4 thumbnail" src="static/test.jpg">
+              <h4 class="col-sm-7">Event Title</h4>
             </a>
           </div>
           <div data-target="#hbCarousel" data-slide-to="2" class="news-thumbnail row">
             <a href="#" class="row">
-              <img class="col-sm-8 thumbnail" src="static/test3.jpg">
-              <h5 class="col-sm-4">Blog Post</h5>
+              <img class="col-sm-4 thumbnail" src="static/test3.jpg">
+              <h4 class="col-sm-7">Blog Post</h4>
             </a>
           </div>
           <div>
@@ -117,8 +122,33 @@
 
         </div>
       </div>
-
+  </div>
+  <footer class="footer2">
+    <div class="container">
+      <!-- Footer -->
+      <div class="row">
+        <div class="col-xs-12 col-md-8">
+          <!-- Main Links -->
+          <div class="row">
+            <div class="col-xs-4">
+              Alunmae Association/Council
+            </div>
+            <div class="col-xs-4">
+              Search Directory
+            </div>
+            <div class="col-xs-4">
+              Career Networking
+            </div>
+          </div>
+          <!-- Quick Links -->
+        </div>
+        <div class="col-xs-4">
+          Quick Links Go Here
+        </div>
+      </div>
     </div>
+  </footer>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
