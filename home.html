@@ -2,17 +2,18 @@
 <head>
   <title></title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-  <link href="frodo.css">
+  <link rel="stylesheet" type="text/css" href="frodo.css">
+  <link rel="stylesheet" type="text/css" href="frodo.less">
   <style type="text/css">
-
-    .carousel-inner {
-      max-height: 400px !important;
-      width: 100%;
-    }
 
     .announcements {
       position: absolute;
       z-index: 15;
+
+    }
+
+    .news-thumbnail {
+      margin: 8px 0 8px 0;
     }
 
     .overlay {
@@ -42,68 +43,84 @@
       position: relative;
     }
 
+    .item>img {
+      width: 900px;
+    }
+
     .news-thumbnail {
-      padding: 20px 0px 20px 0px;
+      padding-bottom: 10px;
+    }
+
+    .thumbnail {
+      width: 125px;
+      border-radius: 15%;
+      padding: 0px;
+      box-shadow: 2px 2px 5px #aaa;
     }
 
   </style>
 </head>
 <body>
   <div id="carousel-example-generic" class="carousel slide container" data-ride="carousel">
-  <!-- Indicators -->
-    <div class="row">
 
+    <div class="row">
     <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         
-        <aside class="announcements col-sm-offset-9 col-sm-3">
+        <aside class="announcements hidden-sm col-md-offset-9 col-md-3">
           <h2>Announcements</h2>
-
-            <div data-slide-to="0" class="active news-thumbnail">
-              <a href="#" class="row">
-                <img class="col-sm-8" src="static/test4.jpg">
-                <h5 class="col-sm-4">Featured Jobs</h5>
-              </a>
-            </div>       
-            <div data-slide-to="1" class="news-thumbnail">
-              <a href="#" class="row">
-                <img class="col-sm-8" src="static/test5.jpg">
-                <h5 class="col-sm-4">Event Title</h5>
-              </a>
-            </div>
-            <div data-slide-to="2" class="news-thumbnail row">
-              <a href="#" class="row">
-                <img class="col-sm-8" src="static/test6.jpg">
-                <h5 class="col-sm-4">Blog Post</h5>
-              </a>
-            </div>
- 
+  
+          <div data-slide-to="0" class="active news-thumbnail">
+            <a href="#" class="row">
+              <img class="col-sm-8 thumbnail" src="static/test2.jpg">
+              <h5 class="col-sm-4">Featured Jobs</h5>
+            </a>
+          </div>       
+          <div data-slide-to="1" class="news-thumbnail">
+            <a href="#" class="row">
+              <img class="col-sm-8 thumbnail" src="static/test.jpg">
+              <h5 class="col-sm-4">Event Title</h5>
+            </a>
+          </div>
+          <div data-slide-to="2" class="news-thumbnail row">
+            <a href="#" class="row">
+              <img class="col-sm-8 thumbnail" src="static/test3.jpg">
+              <h5 class="col-sm-4">Blog Post</h5>
+            </a>
+          </div>
+          <div>
+            <h2>Events</h2>
+          </div>
         </aside>
 
-        <div class="item active">    
-          <img src="static/test4.jpg" alt="">  
-          <div class="overlay"></div>
-          <div class="carousel-caption caption">
-            Caption
+    <!-- Indicators -->
+          <div class="item active" data-target="#carousel-example-generic" data-slide-to="0" >    
+            <img src="static/test2.jpg" alt="...">  
+            <div class="overlay"></div>
+            <div class="carousel-caption caption">
+              Caption
+            </div>
           </div>
-        </div>
-        <div class="item">
-          <img src="static/test5.jpg" alt="">
-          <div class="overlay"></div>
-          <div class="carousel-caption caption">
-            Caption 2
+          <div class="item" data-target="#carousel-example-generic" data-slide-to="1" >
+            <img src="static/test.jpg" alt="...">
+            <div class="overlay"></div>
+            <div class="carousel-caption caption">
+              Caption 2
+            </div>
           </div>
-        </div>
-         <div class="item">
-          <img src="static/test6.jpg" alt="">
-          <div class="overlay"></div>
-          <div class="carousel-caption caption">
-            Caption 2
+           <div class="item" data-target="#carousel-example-generic" data-slide-to="2" >
+            <img src="static/test3.jpg" alt="...">
+            <div class="overlay"></div>
+            <div class="carousel-caption caption">
+              Caption 3
+            </div>
           </div>
+
         </div>
       </div>
+
     </div>
-  </div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
